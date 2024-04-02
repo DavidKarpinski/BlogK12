@@ -64,6 +64,12 @@ input::placeholder {
   font-weight: 700;
   height: 56px;
   margin-top: 40px;
+  transition: .3s all;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #313944;
 }
 
 form {
