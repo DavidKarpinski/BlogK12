@@ -1,3 +1,4 @@
+import ReCAPTCHA from 'react-google-recaptcha'
 import { Link } from 'react-router-dom'
 
 function Register() {
@@ -13,6 +14,7 @@ function Register() {
           <input type='email' name='email' placeholder='Email...'></input>
           <label for='password'>Senha:</label>
           <input type='password' name='password' placeholder='Senha...'></input>
+          <ReCAPTCHA sitekey='6LfnqawpAAAAAEv1zQUbkmOgkh86ZHp_LgBM_9FH' onChange={() => {}} />
           <input type='submit' id='submit' value='Registrar'></input>
         </div>
       </form>
