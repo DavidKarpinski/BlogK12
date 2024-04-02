@@ -1,0 +1,60 @@
+@import '../../index.css';
+
+.navbar {
+  background-color: #0B0C10;
+}
+
+.navbar button {
+  margin-left: 40px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 124px;
+  margin: auto 40px;
+}
+
+.navbar__title {
+  font-size: 32px;
+  line-height: 38.73px;
+}
+
+
+.navbar__buttons button:hover {
+  cursor: pointer;
+}
+
+.navbar__buttons #posts {
+  font-size: 20px;
+  line-height: 24.2px;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar__title, .navbar__buttons #posts {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--neon);
+}
+
+.navbar__buttons #login, .navbar__buttons #register {
+  font-family: 'DM sans';
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.navbar__buttons #login {
+  color: #FFF;
+  background-color: var(--secondary);
+  border: none;
+  padding: 15px 27px;
+}
+
+.navbar__buttons #register {
+  color: var(--neon);
+  background-color: transparent;
+  padding: 14px 27px;
+  border: 1px solid var(--primary);
+}
