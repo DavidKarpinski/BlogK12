@@ -49,6 +49,11 @@
   background-color: var(--secondary);
   border: none;
   padding: 15px 27px;
+  transition: .3s all;
+}
+
+.navbar #login:hover {
+  background-color: #313944;
 }
 
 .navbar #register {
@@ -56,4 +61,11 @@
   background-color: transparent;
   padding: 14px 27px;
   border: 1px solid var(--primary);
+  transition: .3s all;
+}
+
+.navbar #register:hover {
+  background-color: var(--neon);
+  color: #0B0C10;
+  font-weight: bold;
 }
