@@ -1,0 +1,19 @@
+@import '../../index.css';
+
+.footer {
+  background-color: #121212;
+  color: var(--light);
+  text-align: center;
+
+  height: 101px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
