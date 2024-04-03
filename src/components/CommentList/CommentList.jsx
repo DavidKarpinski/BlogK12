@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import Comment from '../Comment/Comment'
+import Comment from '../Comment'
 import { dateFmt } from '../../scripts/dateFmt'
 
 function CommentList({ post_id }) {
@@ -8,14 +8,8 @@ function CommentList({ post_id }) {
 
   useEffect(() => {
     axios.get(`http://localhost:3000/comments?post_id=${post_id}`)
-    .then(function (response) {
-      const { data } = response
-      console.log(data)
-      setData(data)
-    })
-    .catch(function (error) {
-      console.error(error)
-    })
+    .then(res => setData(res.data))
+    .catch(e => console.error(e))
   }, [post_id])
 
   return (
@@ -23,7 +17,13 @@ function CommentList({ post_id }) {
       {data.map(comment => {
         const { id:key, username, email, comment:message, created_at:date } = comment
         return (
-          <Comment key={key} username={username} email={email} date={dateFmt(date)} message={message} />
+          <Comment
+            key={key}
+            username={username}
+            email={email}
+            date={dateFmt(date)}
+            message={message}
+          />
         )
       })}
     </ul>

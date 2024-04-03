@@ -1,6 +1,6 @@
 import './Comment.css'
 
-function Comment({ username = 'devJovem', email = 'devjovem@example.com', message, date }) {
+function Comment({ username, email, message, date }) {
   return (
     <li className='comment'>
       <div className='comment__img-container'>

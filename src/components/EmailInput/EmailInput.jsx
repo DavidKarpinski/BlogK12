@@ -16,7 +16,13 @@ function EmailInput({name = 'email'}) {
 
   return (
     <div>
-      <input type='email' name={name} value={email} onChange={handleEmailChange} placeholder={'Email...'} />
+      <input
+        type='email'
+        name={name}
+        placeholder={'Email...'}
+        value={email}
+        onChange={handleEmailChange}
+      />
       {emailError && <p className="error" style={{ color: 'red', marginBottom: '20px' }}>{emailError}</p>}
     </div>
   )

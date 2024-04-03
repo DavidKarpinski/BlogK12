@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { fetchPost } from '../../scripts/fetchPost'
 import './PostCard.css'
-import TimeInfo from '../TimeInfo/TimeInfo'
+import TimeInfo from '../TimeInfo'
 
 function PostCard({ post_id }) {
   const { title, body, time_read, created_at:date } = fetchPost(post_id)

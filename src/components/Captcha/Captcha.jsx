@@ -1,8 +1,9 @@
 import ReCAPTCHA from 'react-google-recaptcha'
 
 function Captcha() {
+  const captchaKey = process.env.REACT_APP_CAPTCHA_KEY
   return (
-    <ReCAPTCHA sitekey='6LfnqawpAAAAAEv1zQUbkmOgkh86ZHp_LgBM_9FH' onChange={() => {}} />
+    <ReCAPTCHA sitekey={captchaKey} onChange={() => {}} />
   )
 }
 
