@@ -6,6 +6,13 @@
   --secondary: #202833;
 }
 
+.cutted {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 #register, #login {
   background-color: #F2F2F2;
   padding-top: 36px;
