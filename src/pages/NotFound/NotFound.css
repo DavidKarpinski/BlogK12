@@ -1,0 +1,26 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #F2F2F2;
+  background-color: #000;
+  padding: 40vh 0;
+}
+
+.not-found h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 49px;
+  border-right: 1px solid #C5C6C8;
+  margin: 0 20px 0 0;
+  padding-right: 23px;
+}
+
+.not-found h2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 49px;
+  font-family: 'Inter', sans-serif;
+}
