@@ -4,7 +4,7 @@ import { ptBR } from 'date-fns/locale'
 export function dateFmt(rawDate) {
   let dateObj
 
-  // Verifica se a entrada é uma string no formato ISO 8601
+  // Checks whether the input is a string in ISO 8601 format
   if (typeof rawDate === 'string' && isValid(new Date(rawDate)))
     dateObj = new Date(rawDate)
   else if (rawDate instanceof Date)

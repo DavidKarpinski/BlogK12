@@ -1,0 +1,24 @@
+.comment {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.comment__data {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.comment__data strong {
+  font-weight: 700;
+}
+
+.comment__img {
+  width: 51px;
+  height: 51px;
+  border-radius: 100px;
+  border: 2px solid #46A29F;
+  margin-right: 20px;
+}

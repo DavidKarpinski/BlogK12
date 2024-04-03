@@ -7,7 +7,8 @@ function Router() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/index' element={<Home />}></Route>
-        <Route path='/post' element={<Post />}></Route>
+        <Route path='/posts' element={<Home />}></Route>
+        <Route path='/posts/:id' element={<Post />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='*' element={<NotFound />}></Route>
