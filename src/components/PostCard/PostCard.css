@@ -47,4 +47,5 @@
 .card__img {
   width: 261px;
   height: 236px;
+  object-fit: cover;
 }
