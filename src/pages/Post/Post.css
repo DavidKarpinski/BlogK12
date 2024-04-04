@@ -6,7 +6,7 @@
 }
 
 .post-content {
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
 }
 
 .post__title {
@@ -60,4 +60,22 @@
 
 .comments {
   list-style: none;
+}
+
+.back {
+  border: none;
+  font-family: 'Inter';
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFF;
+  background-color: var(--secondary);
+  border: none;
+  padding: 15px 27px;
+  margin-top: 40px;
+  transition: .3s all;
+}
+
+.back:hover {
+  cursor: pointer;
+  background-color: #313944;
 }

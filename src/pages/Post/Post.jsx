@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { fetchPost } from '../../scripts/fetchPost'
 import CommentList from '../../components/CommentList'
 import './Post.css'
@@ -22,6 +22,7 @@ function Post() {
         <div className='comments'>
           <CommentList post_id={id} />
         </div>
+        <Link to='/'><button className='back'>Back</button></Link>
       </section>
     </div>
   )
