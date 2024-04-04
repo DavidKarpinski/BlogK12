@@ -22,7 +22,7 @@ function Post() {
         <div className='comments'>
           <CommentList post_id={id} />
         </div>
-        <Link to='/'><button className='back'>Back</button></Link>
+        <Link to='/' onClick={() => window.scrollTo({ top: 0 })}><button className='back'>Back</button></Link>
       </section>
     </div>
   )

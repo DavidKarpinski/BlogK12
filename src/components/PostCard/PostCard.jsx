@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import { fetchPost } from '../../scripts/fetchPost'
+import SmoothLink from '../SmoothLink'
 import TimeInfo from '../TimeInfo'
+import { fetchPost } from '../../scripts/fetchPost'
 import './PostCard.css'
 
 function PostCard({ post_id }) {
@@ -9,14 +9,14 @@ function PostCard({ post_id }) {
 
   return (
     <div className='card'>
-      <Link to={target}>
+      <SmoothLink to={target}>
         <div className='card__img-container'>
           <img className='card__img' src={image_url} alt='placeholder' />
         </div>
-      </Link>
+      </SmoothLink>
       <div>
-        <h2 className='card__title'><Link to={target}>{title}</Link></h2>
-        <p className='cutted card__body'><Link to={target}>{body}</Link></p>
+        <h2 className='card__title'><SmoothLink to={target}>{title}</SmoothLink></h2>
+        <p className='cutted card__body'><SmoothLink to={target}>{body}</SmoothLink></p>
         <TimeInfo _class={'card__timeinfo'} time_read={time_read} date={date} />
       </div>
     </div>

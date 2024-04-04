@@ -1,6 +1,6 @@
 import React from 'react'
-import Feature from '../../components/Feature/Feature'
-import PostCard from '../../components/PostCard/PostCard'
+import Feature from '../../components/Feature'
+import PostCard from '../../components/PostCard'
 
 function Home() {
   const post_ids = [4, 5, 6]
