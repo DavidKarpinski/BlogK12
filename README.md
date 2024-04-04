@@ -22,3 +22,5 @@ npm run build
 # or
 yarn build
 ```
+
+You must create a Google ReCAPTCHA access key and include it in the .env file
