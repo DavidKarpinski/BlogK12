@@ -43,3 +43,8 @@
 .card__img-container {
   margin-right: 40px;
 }
+
+.card__img {
+  width: 261px;
+  height: 236px;
+}

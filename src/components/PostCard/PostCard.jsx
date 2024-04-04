@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
 import { fetchPost } from '../../scripts/fetchPost'
-import './PostCard.css'
 import TimeInfo from '../TimeInfo'
+import './PostCard.css'
 
 function PostCard({ post_id }) {
-  const { title, body, time_read, created_at:date } = fetchPost(post_id)
+  const { title, body, time_read, created_at:date, image_url } = fetchPost(post_id)
   const target = `/posts/${post_id}`
 
   return (
     <div className='card'>
       <Link to={target}>
         <div className='card__img-container'>
-          <img className='card__img' src='https://via.placeholder.com/241x236' alt='placeholder' />
+          <img className='card__img' src={image_url} alt='placeholder' />
         </div>
       </Link>
       <div>

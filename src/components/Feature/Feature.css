@@ -29,6 +29,7 @@
 .feature__img {
   width: 1192px;
   height: 357.08px;
+  object-fit: cover;
 }
 
 .prev {

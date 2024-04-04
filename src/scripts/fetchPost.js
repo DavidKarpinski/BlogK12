@@ -7,9 +7,13 @@ export function fetchPost(post_id) {
 
   useEffect(() => {
     axios.get(`http://localhost:3000/posts/${post_id}`)
-    .then(res => setPostData(res.data))
+    .then(res => {
+      setPostData(res.data)})
     .catch(e => console.error(e))
   }, [post_id])
+
+  postData.image_url && (postData.image_url = postData.image_url
+  .replace('unsplash.com/photos/', 'source.unsplash.com/'))
 
   return postData
 }

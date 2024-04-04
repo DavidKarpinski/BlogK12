@@ -1,17 +1,17 @@
+import React from 'react'
 import Feature from '../../components/Feature/Feature'
 import PostCard from '../../components/PostCard/PostCard'
 
 function Home() {
-  const post_id = 1
-
+  const post_ids = [4, 5, 6]
   return (
     <div>
-      <Feature post_id={post_id} />
+      <Feature post_id={1} />
       <main className='posts'>
-        <PostCard post_id={1} />
-        <PostCard post_id={2} />
-        <PostCard post_id={3} />
-      </main>
+        {post_ids.map(post_id => (
+          <PostCard key={post_id} post_id={post_id} />
+        ))}
+        </main>
     </div>
   )
 }

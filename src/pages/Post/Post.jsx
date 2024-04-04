@@ -1,22 +1,20 @@
-import { dateFmt } from '../../scripts/dateFmt'
 import { useParams } from 'react-router-dom'
 import { fetchPost } from '../../scripts/fetchPost'
-import CommentList from '../../components/CommentList/CommentList'
+import CommentList from '../../components/CommentList'
 import './Post.css'
+import TimeInfo from '../../components/TimeInfo'
 
 function Post() {
   const { id } = useParams()
   const postData = fetchPost(id)
-
   const { title, body, created_at:date, time_read, image_url } = postData
-  console.log('Image URL: ' + image_url)
 
   return (
     <div className='post-content'>
       <main className='post'>
         <h1 className='post__title'>{title}</h1>
-        <p className='post__info'>{time_read} min &bull; {dateFmt(date)}</p>
-        <img className='post__picture' src='https://images.unsplash.com/photo-1501504905252-473c47e087f8' alt='none' />
+        <TimeInfo _class={'post__info'} time_read={time_read} date={date} />
+        <img className='post__picture' src={image_url} alt='post' />
         <p className='post__body'>{body}</p>
       </main>
       <section className='comments-section'>
