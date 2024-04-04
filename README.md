@@ -16,9 +16,11 @@ cd blogk12
 
 npm i
 # or
-yarn install
+yarn
 
-npm build
+npm run build
 # or
 yarn build
 ```
+
+You must create a Google ReCAPTCHA access key and include it in the .env file
