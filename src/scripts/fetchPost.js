@@ -9,7 +9,10 @@ export function fetchPost(post_id) {
     axios.get(`http://localhost:3000/posts/${post_id}`)
     .then(res => {
       setPostData(res.data)})
-    .catch(e => console.error(e))
+    .catch(e => {
+      window.location = '/not-found'
+      console.error(e)
+    })
   }, [post_id])
 
   postData.image_url && (postData.image_url = postData.image_url

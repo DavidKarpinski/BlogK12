@@ -1,13 +1,13 @@
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { fetchPost } from '../../scripts/fetchPost'
 import CommentList from '../../components/CommentList'
-import './Post.css'
 import TimeInfo from '../../components/TimeInfo'
+import SmoothLink from '../../components/SmoothLink'
+import './Post.css'
 
 function Post() {
   const { id } = useParams()
-  const postData = fetchPost(id)
-  const { title, body, created_at:date, time_read, image_url } = postData
+  const { title, body, created_at:date, time_read, image_url } = fetchPost(id)
 
   return (
     <div className='post-content'>
@@ -22,7 +22,9 @@ function Post() {
         <div className='comments'>
           <CommentList post_id={id} />
         </div>
-        <Link to='/' onClick={() => window.scrollTo({ top: 0 })}><button className='back'>Back</button></Link>
+        <SmoothLink to='/'>
+          <button className='back'>Back</button>
+        </SmoothLink>
       </section>
     </div>
   )
