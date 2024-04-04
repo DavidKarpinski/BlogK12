@@ -16,9 +16,9 @@ cd blogk12
 
 npm i
 # or
-yarn install
+yarn
 
-npm build
+npm run build
 # or
 yarn build
 ```
